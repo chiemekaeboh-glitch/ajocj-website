@@ -7,20 +7,28 @@
   <meta name="description" content="AJO'CJ — Nigerian news, trending stories, opportunities, education, law, entertainment and more.">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body id="home">
+
   <div class="topbar">
     <div class="wrap topbar-inner">
-      <span> AJO'CJ MEDIA</span>
-      <div class="toplinks"><a href="#">About</a><a href="#">Contact</a><a href="#">Advertise</a></div>
+      <span>AJO'CJ MEDIA</span>
+      <div class="toplinks">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#advertise">Advertise</a>
+      </div>
     </div>
   </div>
 
   <header class="header wrap">
-    <a class="brand" href="index.html" aria-label="AJO'CJ home">
+    <a class="brand" href="#home" aria-label="AJO'CJ home">
       <span class="brand-mark">AJO<span>'</span>CJ</span>
       <span class="tagline">What Nigeria Is Talking About.</span>
     </a>
+
     <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
     <div class="header-tools">
       <button class="search-btn" id="searchBtn">Search</button>
     </div>
@@ -28,7 +36,7 @@
 
   <nav class="nav" id="nav">
     <div class="wrap nav-inner">
-      <a class="active" href="#">Home</a>
+      <a class="active" href="#home">Home</a>
       <a href="#trending">Trending</a>
       <a href="#nigeria">Nigeria</a>
       <a href="#politics">Politics</a>
@@ -43,6 +51,7 @@
   </nav>
 
   <main class="wrap">
+
     <div class="search-panel" id="searchPanel">
       <input id="searchInput" type="search" placeholder="Search AJO'CJ..." aria-label="Search AJO'CJ">
       <button id="doSearch">Search</button>
@@ -50,116 +59,506 @@
 
     <section class="breaking">
       <strong>BREAKING</strong>
-      <div class="ticker">Welcome to AJO'CJ — your new home for Nigerian news, trends and opportunities.</div>
+      <div class="ticker">
+        Welcome to AJO'CJ — your new home for Nigerian news, trends and opportunities.
+      </div>
     </section>
 
     <section class="hero-grid">
+
       <article class="hero-card">
         <div class="hero-image">AJO'CJ</div>
+
         <div class="hero-copy">
           <span class="label">FEATURED</span>
+
           <h1>Welcome to AJO'CJ: What Nigeria Is Talking About.</h1>
-          <p>Your platform for news, trending stories, opportunities, education, law, entertainment and stories that matter.</p>
-          <a class="read-more" href="#">Read Story →</a>
+
+          <p>
+            Your platform for news, trending stories, opportunities,
+            education, law, entertainment and stories that matter.
+          </p>
+
+          <a class="read-more" href="#trending">Read Stories →</a>
         </div>
       </article>
 
       <aside class="latest">
-        <div class="section-head"><h2>Latest Stories</h2><a href="#">View all</a></div>
-        <article class="mini"><span class="number">01</span><div><span class="category">NIGERIA</span><h3>What Nigerians are talking about today</h3><small>Update your first verified story here.</small></div></article>
-        <article class="mini"><span class="number">02</span><div><span class="category">EDUCATION</span><h3>Education news and opportunities</h3><small>Update your first verified story here.</small></div></article>
-        <article class="mini"><span class="number">03</span><div><span class="category">LAW</span><h3>Law and human-rights stories</h3><small>Update your first verified story here.</small></div></article>
-        <article class="mini"><span class="number">04</span><div><span class="category">OPPORTUNITIES</span><h3>Jobs, scholarships and openings</h3><small>Update your first verified story here.</small></div></article>
+
+        <div class="section-head">
+          <h2>Latest Stories</h2>
+          <a href="#trending">View all</a>
+        </div>
+
+        <article class="mini">
+          <span class="number">01</span>
+          <div>
+            <span class="category">NIGERIA</span>
+            <h3>What Nigerians are talking about today</h3>
+            <small>Update your first verified story here.</small>
+          </div>
+        </article>
+
+        <article class="mini">
+          <span class="number">02</span>
+          <div>
+            <span class="category">EDUCATION</span>
+            <h3>Education news and opportunities</h3>
+            <small>Update your first verified story here.</small>
+          </div>
+        </article>
+
+        <article class="mini">
+          <span class="number">03</span>
+          <div>
+            <span class="category">LAW</span>
+            <h3>Law and human-rights stories</h3>
+            <small>Update your first verified story here.</small>
+          </div>
+        </article>
+
+        <article class="mini">
+          <span class="number">04</span>
+          <div>
+            <span class="category">OPPORTUNITIES</span>
+            <h3>Jobs, scholarships and openings</h3>
+            <small>Update your first verified story here.</small>
+          </div>
+        </article>
+
       </aside>
     </section>
 
     <section class="content-grid">
+
       <div>
+
+        <!-- TRENDING -->
         <section id="trending">
-          <div class="section-head"><h2>Trending Now</h2><a href="#">See more</a></div>
+
+          <div class="section-head">
+            <h2>Trending Now</h2>
+            <a href="#viral">See more</a>
+          </div>
+
           <div class="cards">
-            <article class="card"><div class="placeholder">TRENDING</div><span class="category">TRENDING</span><h3>5 things Nigerians are searching for today</h3><p>Replace this demo card with a verified AJO'CJ article.</p><small>Today · 0 comments</small></article>
-            <article class="card"><div class="placeholder">NIGERIA</div><span class="category">NIGERIA</span><h3>The stories making headlines across the country</h3><p>Replace this demo card with a verified AJO'CJ article.</p><small>Today · 0 comments</small></article>
-            <article class="card"><div class="placeholder">VIRAL</div><span class="category">VIRAL</span><h3>What is going viral online?</h3><p>Explain what happened, verify the facts and link to reliable sources.</p><small>Today · 0 comments</small></article>
+
+            <article class="card">
+              <div class="placeholder">TRENDING</div>
+              <span class="category">TRENDING</span>
+              <h3>5 things Nigerians are searching for today</h3>
+              <p>Replace this demo card with a verified AJO'CJ article.</p>
+              <small>Today · 0 comments</small>
+            </article>
+
+            <article class="card">
+              <div class="placeholder">NIGERIA</div>
+              <span class="category">NIGERIA</span>
+              <h3>The stories making headlines across the country</h3>
+              <p>Replace this demo card with a verified AJO'CJ article.</p>
+              <small>Today · 0 comments</small>
+            </article>
+
+            <article class="card">
+              <div class="placeholder">VIRAL</div>
+              <span class="category">VIRAL</span>
+              <h3>What is going viral online?</h3>
+              <p>Explain what happened, verify the facts and link to reliable sources.</p>
+              <small>Today · 0 comments</small>
+            </article>
+
           </div>
         </section>
 
+        <!-- NIGERIA -->
         <section id="nigeria" class="category-section">
-          <div class="section-head"><h2>Nigeria</h2><a href="#">More Nigeria →</a></div>
+
+          <div class="section-head">
+            <h2>Nigeria</h2>
+            <a href="#nigeria">More Nigeria →</a>
+          </div>
+
           <div class="story-row">
-            <article><div class="thumb">🇳🇬</div><h3>National news and developments</h3><p>Verified reporting from across Nigeria.</p></article>
-            <article><div class="thumb">📰</div><h3>State-by-state updates</h3><p>Local stories with context and sources.</p></article>
+
+            <article>
+              <div class="thumb">🇳🇬</div>
+              <h3>National news and developments</h3>
+              <p>Verified reporting from across Nigeria.</p>
+            </article>
+
+            <article>
+              <div class="thumb">📰</div>
+              <h3>State-by-state updates</h3>
+              <p>Local stories with context and sources.</p>
+            </article>
+
           </div>
         </section>
 
+        <!-- POLITICS -->
         <section id="politics" class="category-section">
-          <div class="section-head"><h2>Politics</h2><a href="#">More Politics →</a></div>
+
+          <div class="section-head">
+            <h2>Politics</h2>
+            <a href="#politics">More Politics →</a>
+          </div>
+
           <div class="story-row">
-            <article><div class="thumb">🏛️</div><h3>Politics, government and public affairs</h3><p>Clear reporting without unnecessary noise.</p></article>
-            <article><div class="thumb">🗳️</div><h3>Election and governance updates</h3><p>Use official sources for election-related claims.</p></article>
+
+            <article>
+              <div class="thumb">🏛️</div>
+              <h3>Politics, government and public affairs</h3>
+              <p>Clear reporting without unnecessary noise.</p>
+            </article>
+
+            <article>
+              <div class="thumb">🗳️</div>
+              <h3>Election and governance updates</h3>
+              <p>Use official sources for election-related claims.</p>
+            </article>
+
           </div>
         </section>
 
+        <!-- EDUCATION -->
         <section id="education" class="category-section">
-          <div class="section-head"><h2>Education</h2><a href="#">More Education →</a></div>
+
+          <div class="section-head">
+            <h2>Education</h2>
+            <a href="#education">More Education →</a>
+          </div>
+
           <div class="story-row">
-            <article><div class="thumb">🎓</div><h3>Universities, JAMB and student news</h3><p>Useful information for Nigerian students.</p></article>
-            <article><div class="thumb">📚</div><h3>Scholarships and academic opportunities</h3><p>Always verify deadlines and eligibility before publishing.</p></article>
+
+            <article>
+              <div class="thumb">🎓</div>
+              <h3>Universities, JAMB and student news</h3>
+              <p>Useful information for Nigerian students.</p>
+            </article>
+
+            <article>
+              <div class="thumb">📚</div>
+              <h3>Scholarships and academic opportunities</h3>
+              <p>Always verify deadlines and eligibility before publishing.</p>
+            </article>
+
           </div>
         </section>
 
+        <!-- LAW -->
         <section id="law" class="category-section">
-          <div class="section-head"><h2>Law & Human Rights</h2><a href="#">More Law →</a></div>
+
+          <div class="section-head">
+            <h2>Law & Human Rights</h2>
+            <a href="#law">More Law →</a>
+          </div>
+
           <div class="story-row">
-            <article><div class="thumb">⚖️</div><h3>Rights, courts and legal developments</h3><p>Accessible legal information for everyone.</p></article>
-            <article><div class="thumb">📜</div><h3>Know your rights</h3><p>Explain legal issues carefully and cite authoritative sources.</p></article>
+
+            <article>
+              <div class="thumb">⚖️</div>
+              <h3>Rights, courts and legal developments</h3>
+              <p>Accessible legal information for everyone.</p>
+            </article>
+
+            <article>
+              <div class="thumb">📜</div>
+              <h3>Know your rights</h3>
+              <p>Explain legal issues carefully and cite authoritative sources.</p>
+            </article>
+
           </div>
         </section>
 
+        <!-- JOBS -->
         <section id="jobs" class="category-section">
-          <div class="section-head"><h2>Jobs & Opportunities</h2><a href="#">More Opportunities →</a></div>
+
+          <div class="section-head">
+            <h2>Jobs & Opportunities</h2>
+            <a href="#jobs">More Opportunities →</a>
+          </div>
+
           <div class="story-row">
-            <article><div class="thumb">💼</div><h3>Jobs Nigerians can apply for</h3><p>Remote, graduate and entry-level opportunities.</p></article>
-            <article><div class="thumb">🚀</div><h3>Scholarships, grants and programmes</h3><p>Only publish opportunities after checking the official source.</p></article>
+
+            <article>
+              <div class="thumb">💼</div>
+              <h3>Jobs Nigerians can apply for</h3>
+              <p>Remote, graduate and entry-level opportunities.</p>
+            </article>
+
+            <article>
+              <div class="thumb">🚀</div>
+              <h3>Scholarships, grants and programmes</h3>
+              <p>Only publish opportunities after checking the official source.</p>
+            </article>
+
           </div>
         </section>
 
+        <!-- ENTERTAINMENT -->
         <section id="entertainment" class="category-section">
-          <div class="section-head"><h2>Entertainment</h2><a href="#">More Entertainment →</a></div>
+
+          <div class="section-head">
+            <h2>Entertainment</h2>
+            <a href="#entertainment">More Entertainment →</a>
+          </div>
+
           <div class="story-row">
-            <article><div class="thumb">🎤</div><h3>Music, film and celebrity news</h3><p>Fresh entertainment stories and culture.</p></article>
-            <article><div class="thumb">🎬</div><h3>What is trending in pop culture?</h3><p>Context first. Rumours second—or not at all.</p></article>
+
+            <article>
+              <div class="thumb">🎤</div>
+              <h3>Music, film and celebrity news</h3>
+              <p>Fresh entertainment stories and culture.</p>
+            </article>
+
+            <article>
+              <div class="thumb">🎬</div>
+              <h3>What is trending in pop culture?</h3>
+              <p>Context first. Rumours second—or not at all.</p>
+            </article>
+
           </div>
         </section>
 
+        <!-- SPORTS -->
         <section id="sports" class="category-section">
-          <div class="section-head"><h2>Sports</h2><a href="#">More Sports →</a></div>
+
+          <div class="section-head">
+            <h2>Sports</h2>
+            <a href="#sports">More Sports →</a>
+          </div>
+
           <div class="story-row">
-            <article><div class="thumb">⚽</div><h3>Super Eagles and Nigerian sports</h3><p>Scores, fixtures and sports stories.</p></article>
-            <article><div class="thumb">🏆</div><h3>Football and beyond</h3><p>National and international sporting news.</p></article>
+
+            <article>
+              <div class="thumb">⚽</div>
+              <h3>Super Eagles and Nigerian sports</h3>
+              <p>Scores, fixtures and sports stories.</p>
+            </article>
+
+            <article>
+              <div class="thumb">🏆</div>
+              <h3>Football and beyond</h3>
+              <p>National and international sporting news.</p>
+            </article>
+
           </div>
         </section>
 
+        <!-- INTERNATIONAL -->
         <section id="international" class="category-section">
-          <div class="section-head"><h2>International</h2><a href="#">More International →</a></div>
+
+          <div class="section-head">
+            <h2>International</h2>
+            <a href="#international">More International →</a>
+          </div>
+
           <div class="story-row">
-            <article><div class="thumb">🌍</div><h3>World news Nigerians should know</h3><p>International developments with Nigerian relevance.</p></article>
-            <article><div class="thumb">✈️</div><h3>Global opportunities and updates</h3><p>Useful international information.</p></article>
+
+            <article>
+              <div class="thumb">🌍</div>
+              <h3>World news Nigerians should know</h3>
+              <p>International developments with Nigerian relevance.</p>
+            </article>
+
+            <article>
+              <div class="thumb">✈️</div>
+              <h3>Global opportunities and updates</h3>
+              <p>Useful international information.</p>
+            </article>
+
           </div>
         </section>
 
+        <!-- VIRAL -->
         <section id="viral" class="category-section">
-          <div class="section-head"><h2>Viral Stories</h2><a href="#">More Viral →</a></div>
+
+          <div class="section-head">
+            <h2>Viral Stories</h2>
+            <a href="#viral">More Viral →</a>
+          </div>
+
           <div class="story-row">
-            <article><div class="thumb">🔥</div><h3>Viral stories, explained</h3><p>We separate what happened from what the internet claims happened.</p></article>
-            <article><div class="thumb">📱</div><h3>Social media trends</h3><p>Trending conversations with context.</p></article>
+
+            <article>
+              <div class="thumb">🔥</div>
+              <h3>Viral stories, explained</h3>
+              <p>We separate what happened from what the internet claims happened.</p>
+            </article>
+
+            <article>
+              <div class="thumb">📱</div>
+              <h3>Social media trends</h3>
+              <p>Trending conversations with context.</p>
+            </article>
+
           </div>
         </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="category-section">
+
+          <div class="section-head">
+            <h2>About AJO'CJ</h2>
+          </div>
+
+          <div class="story-row">
+
+            <article>
+              <div class="thumb">📰</div>
+              <h3>What is AJO'CJ?</h3>
+              <p>
+                AJO'CJ is a Nigerian digital media platform focused on
+                useful, timely and responsible stories.
+              </p>
+            </article>
+
+            <article>
+              <div class="thumb">🇳🇬</div>
+              <h3>What Nigeria Is Talking About</h3>
+              <p>
+                We cover news, trends, education, law, opportunities,
+                entertainment, sports and stories that matter to Nigerians.
+              </p>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="category-section">
+
+          <div class="section-head">
+            <h2>Contact AJO'CJ</h2>
+          </div>
+
+          <div class="story-row">
+
+            <article>
+              <div class="thumb">📩</div>
+              <h3>Get in touch</h3>
+              <p>
+                For news tips, corrections, enquiries and general
+                correspondence, contact the AJO'CJ team.
+              </p>
+            </article>
+
+            <article>
+              <div class="thumb">📢</div>
+              <h3>Send us a story</h3>
+              <p>
+                Have a story worth sharing? Send verified information
+                and supporting details to the AJO'CJ team.
+              </p>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ADVERTISE -->
+        <section id="advertise" class="category-section">
+
+          <div class="section-head">
+            <h2>Advertise With AJO'CJ</h2>
+          </div>
+
+          <div class="story-row">
+
+            <article>
+              <div class="thumb">📣</div>
+              <h3>Reach our audience</h3>
+              <p>
+                Businesses, organisations and brands can contact AJO'CJ
+                to discuss advertising and promotional opportunities.
+              </p>
+            </article>
+
+            <article>
+              <div class="thumb">💼</div>
+              <h3>Partnerships</h3>
+              <p>
+                We welcome relevant partnerships and opportunities that
+                provide value to our readers.
+              </p>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- PRIVACY -->
+        <section id="privacy" class="category-section">
+
+          <div class="section-head">
+            <h2>Privacy Policy</h2>
+          </div>
+
+          <div class="story-row">
+
+            <article>
+              <div class="thumb">🔒</div>
+              <h3>Your privacy matters</h3>
+              <p>
+                AJO'CJ respects the privacy of its visitors. Any future
+                collection and use of personal information will be
+                explained clearly in this policy.
+              </p>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- TERMS -->
+        <section id="terms" class="category-section">
+
+          <div class="section-head">
+            <h2>Terms of Service</h2>
+          </div>
+
+          <div class="story-row">
+
+            <article>
+              <div class="thumb">📄</div>
+              <h3>Using AJO'CJ</h3>
+              <p>
+                By using this website, visitors agree to use its content
+                responsibly and lawfully.
+              </p>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- EDITORIAL POLICY -->
+        <section id="editorial" class="category-section">
+
+          <div class="section-head">
+            <h2>Editorial Policy</h2>
+          </div>
+
+          <div class="story-row">
+
+            <article>
+              <div class="thumb">✍️</div>
+              <h3>Responsible reporting</h3>
+              <p>
+                AJO'CJ aims to publish accurate, responsible and
+                properly sourced information. Claims should be verified
+                before publication, and corrections should be made when
+                errors are identified.
+              </p>
+            </article>
+
+          </div>
+        </section>
+
       </div>
 
+      <!-- SIDEBAR -->
       <aside class="sidebar">
+
         <div class="side-box">
           <h2>Most Read</h2>
+
           <ol>
             <li>What Nigerians are searching for today</li>
             <li>Latest education updates</li>
@@ -168,30 +567,87 @@
             <li>Viral stories you should know</li>
           </ol>
         </div>
+
         <div class="side-box newsletter">
+
           <h2>Get AJO'CJ updates</h2>
-          <p>News, trends and opportunities delivered to your inbox.</p>
-          <input type="email" placeholder="Your email address">
+
+          <p>
+            News, trends and opportunities delivered to your inbox.
+          </p>
+
+          <input
+            type="email"
+            placeholder="Your email address"
+          >
+
           <button>Subscribe</button>
-          <small>Newsletter functionality will be connected before launch.</small>
+
+          <small>
+            Newsletter functionality will be connected before launch.
+          </small>
+
         </div>
+
         <div class="side-box">
+
           <h2>About AJO'CJ</h2>
-          <p>A Nigerian digital media platform focused on useful, timely and responsible stories.</p>
+
+          <p>
+            A Nigerian digital media platform focused on useful,
+            timely and responsible stories.
+          </p>
+
+          <a href="#about">Learn more →</a>
+
         </div>
+
       </aside>
+
     </section>
+
   </main>
 
   <footer>
+
     <div class="wrap footer-grid">
-      <div><div class="footer-brand">AJO<span>'</span>CJ</div><p>What Nigeria Is Talking About.</p></div>
-      <div><h4>Explore</h4><a href="#nigeria">Nigeria</a><a href="#education">Education</a><a href="#jobs">Opportunities</a></div>
-      <div><h4>Company</h4><a href="#">About Us</a><a href="#">Contact</a><a href="#">Advertise</a></div>
-      <div><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Editorial Policy</a></div>
+
+      <div>
+        <div class="footer-brand">AJO<span>'</span>CJ</div>
+        <p>What Nigeria Is Talking About.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="#nigeria">Nigeria</a>
+        <a href="#education">Education</a>
+        <a href="#jobs">Opportunities</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#advertise">Advertise</a>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+        <a href="#editorial">Editorial Policy</a>
+      </div>
+
     </div>
-    <div class="wrap copyright">© 2026 AJO'CJ. All rights reserved.</div>
+
+    <div class="wrap copyright">
+      © 2026 AJO'CJ. All rights reserved.
+    </div>
+
   </footer>
+
   <script src="script.js"></script>
+
 </body>
 </html>
+
